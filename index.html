@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -330,6 +329,23 @@ html
             color: #FFD700;
             margin-right: 5px;
         }
+        
+        .qr-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(145deg, rgba(62, 39, 35, 0.9), rgba(139, 69, 19, 0.9));
+            border-radius: 15px;
+            border: 2px solid var(--accent);
+        }
+        
+        .qr-container {
+            display: inline-block;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
     </style>
 </head>
 <body>
@@ -344,7 +360,7 @@ html
         
         <div class="menu-categories">
             <button class="category-btn active"><i class="fas fa-coffee"></i> Cafés</button>
-            <button class="category-btn"><i class="fas fa-bread-slice"></i> Tostadas</button>
+            <button class="category-btn"><i class="fas fa-cookie"></i> Snacks</button>
             <button class="category-btn"><i class="fas fa-glass-whiskey"></i> Bebidas</button>
         </div>
         
@@ -480,25 +496,34 @@ html
             </div>
         </div>
         
-        <!-- Sección de Tostadas -->
+        <!-- Sección de Snacks -->
         <div class="menu-section">
-            <h2 class="section-title"><i class="fas fa-bread-slice"></i> Tostadas</h2>
+            <h2 class="section-title"><i class="fas fa-cookie"></i> Snacks</h2>
             <div class="drinks-grid">
-                <!-- Tostada 1 -->
+                <!-- Snack 1 -->
                 <div class="drink-card">
                     <div class="drink-info">
                         <h3 class="drink-name">Tostada Clásica</h3>
-                        <p class="drink-description">Pan tostado crujiente con mantequilla y mermelada de tu elección.</p>
+                        <p class="drink-description">Pan tostado crujiente con mantequilla.</p>
                         <p class="drink-price">$260</p>
                     </div>
                 </div>
                 
-                <!-- Tostada 2 -->
+                <!-- Snack 2 -->
                 <div class="drink-card">
                     <div class="drink-info">
                         <h3 class="drink-name">Tostada Especial</h3>
                         <p class="drink-description">Tostada con aguacate, tomate y un toque de aceite de oliva.</p>
                         <p class="drink-price">$300</p>
+                    </div>
+                </div>
+                
+                <!-- Snack 3 -->
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Croquetas</h3>
+                        <p class="drink-description">Deliciosas croquetas caseras crujientes por fuera y cremosas por dentro.</p>
+                        <p class="drink-price">$250</p>
                     </div>
                 </div>
             </div>
@@ -637,15 +662,28 @@ html
                 </div>
             </div>
         </div>
+
+        <!-- Sección QR Code -->
+        <div class="qr-section">
+            <h2 class="section-title"><i class="fas fa-qrcode"></i> Escanea Nuestro Menú</h2>
+            <p style="color: #ddd; margin-bottom: 20px; font-size: 1.1rem;">
+                Guarda nuestro menú digital en tu teléfono para consultarlo cuando quieras
+            </p>
+            <div class="qr-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ubxruso.github.io/blinky-night-coffee/" 
+                     alt="QR Code Blinky Night Coffee" 
+                     style="border-radius: 5px;">
+            </div>
+            <p style="color: #FFD700; margin-top: 15px; font-weight: bold;">
+                📱 https://ubxruso.github.io/blinky-night-coffee/
+            </p>
+        </div>
         
         <footer>
-            <p>© 2023 <span class="highlight">Blinky Night Coffee</span> - Todos los derechos reservados</p>
-            <p>Horario: Lunes a Domingo de 7:00 AM a 12:00 PM</p>
+            <p>© 2025 <span class="highlight">Blinky Night Coffee</span> - Todos los derechos reservados</p>
+            <p>Horario: Lunes a Domingo de 10:00 AM a 10:00 PM</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/blinky_night_coffee?igsh=Z2duczUwamlmeWQx" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
             </div>
         </footer>
     </div>
@@ -673,7 +711,7 @@ html
                     const category = this.textContent.trim().toLowerCase();
                     if (category.includes('café') || category.includes('cafes')) {
                         menuSections[0].style.display = 'block';
-                    } else if (category.includes('tostada')) {
+                    } else if (category.includes('snack')) {
                         menuSections[1].style.display = 'block';
                     } else if (category.includes('bebida')) {
                         menuSections[2].style.display = 'block';
