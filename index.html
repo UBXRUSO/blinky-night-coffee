@@ -178,12 +178,14 @@
             display: block;
         }
         
-        .drink-image-large {
+        .drink-image-perfect {
             width: 100%;
-            height: 300px;
-            object-fit: cover;
+            height: auto;
+            max-height: 350px;
+            object-fit: contain;
             border-bottom: 2px solid var(--secondary);
             display: block;
+            background-color: rgba(255, 255, 255, 0.05);
         }
         
         .drink-info {
@@ -283,8 +285,8 @@
                 font-size: 0.9rem;
             }
             
-            .drink-image-large {
-                height: 250px;
+            .drink-image-perfect {
+                max-height: 300px;
             }
         }
         
@@ -307,8 +309,8 @@
                 font-size: 1.8rem;
             }
             
-            .drink-image-large {
-                height: 220px;
+            .drink-image-perfect {
+                max-height: 250px;
             }
         }
         
@@ -448,11 +450,11 @@
                     </div>
                 </div>
                 
-                <!-- Café 8 - Frapuchino Helado con Imagen Expandida -->
+                <!-- Café 8 - Frapuchino Helado con Imagen Perfectamente Ajustada -->
                 <div class="drink-card">
-                    <img src="frapuchino helado.jpeg" alt="Frapuchino Helado - Deliciosa bebida fría con café y helado" class="drink-image-large">
+                    <img src="frapuchino helado.jpeg" alt="Frapuchino Helado - Deliciosa bebida fría con café y helado" class="drink-image-perfect">
                     <div class="drink-info">
-                        <h3 class="drink-name">frapuchino helado</h3>
+                        <h3 class="drink-name">Frapuchino Helado</h3>
                         <p class="drink-description">Otra versión del frapuchino clásico añadiendo helado en la cremosa mezcla.</p>
                         <p class="drink-price">$360</p>
                     </div>
@@ -775,4 +777,3 @@
     </script>
 </body>
 </html>
-
