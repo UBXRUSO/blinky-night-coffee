@@ -177,6 +177,11 @@
             border-bottom: 2px solid var(--secondary);
         }
         
+        /* Imagen más alta solo para Expresso */
+        .drink-card:first-child .drink-image {
+            height: 220px;
+        }
+        
         .drink-info {
             padding: 20px;
             position: relative;
@@ -273,6 +278,11 @@
                 padding: 10px 20px;
                 font-size: 0.9rem;
             }
+            
+            /* Ajuste para móviles */
+            .drink-card:first-child .drink-image {
+                height: 200px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -292,6 +302,11 @@
             
             h1 {
                 font-size: 1.8rem;
+            }
+            
+            /* Ajuste para móviles pequeños */
+            .drink-card:first-child .drink-image {
+                height: 180px;
             }
         }
         
@@ -368,7 +383,7 @@
         <div class="menu-section">
             <h2 class="section-title"><i class="fas fa-coffee"></i> Nuestros Cafés</h2>
             <div class="drinks-grid">
-                <!-- Café 1 -->
+                <!-- Café 1 - Expresso con imagen más alta -->
                 <div class="drink-card">
                     <img src="https://ubxruso.github.io/blinky-night-coffee/expresso.jpeg" alt="Expresso" class="drink-image">
                     <div class="drink-info">
