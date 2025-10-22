@@ -177,14 +177,25 @@
             border-bottom: 2px solid var(--secondary);
         }
         
-        /* Imagen más alta solo para Expresso */
+        /* Tamaños ajustados según especificaciones */
         .expresso-image {
-            height: 220px !important;
+            height: 250px !important; /* +30px (220px + 30px) */
         }
         
-        /* Imágenes más altas para Cortado, Bombón, Capuchino y Nutella Afogato */
-        .cortado-image, .bombon-image, .capuchino-image, .nutella-image {
-            height: 260px !important;
+        .bombon-image {
+            height: 340px !important; /* +80px (260px + 80px) */
+        }
+        
+        .capuchino-image {
+            height: 410px !important; /* +150px (260px + 150px) */
+        }
+        
+        .nutella-image {
+            height: 410px !important; /* +150px (260px + 150px) */
+        }
+        
+        .cortado-image {
+            height: 260px !important; /* Mantiene el tamaño anterior */
         }
         
         .drink-info {
@@ -286,10 +297,22 @@
             
             /* Ajuste para móviles */
             .expresso-image {
-                height: 200px !important;
+                height: 220px !important;
             }
             
-            .cortado-image, .bombon-image, .capuchino-image, .nutella-image {
+            .bombon-image {
+                height: 280px !important;
+            }
+            
+            .capuchino-image {
+                height: 320px !important;
+            }
+            
+            .nutella-image {
+                height: 320px !important;
+            }
+            
+            .cortado-image {
                 height: 220px !important;
             }
         }
@@ -315,10 +338,22 @@
             
             /* Ajuste para móviles pequeños */
             .expresso-image {
-                height: 180px !important;
+                height: 200px !important;
             }
             
-            .cortado-image, .bombon-image, .capuchino-image, .nutella-image {
+            .bombon-image {
+                height: 240px !important;
+            }
+            
+            .capuchino-image {
+                height: 280px !important;
+            }
+            
+            .nutella-image {
+                height: 280px !important;
+            }
+            
+            .cortado-image {
                 height: 200px !important;
             }
         }
@@ -396,7 +431,7 @@
         <div class="menu-section">
             <h2 class="section-title"><i class="fas fa-coffee"></i> Nuestros Cafés</h2>
             <div class="drinks-grid">
-                <!-- Café 1 - Expresso con imagen más alta -->
+                <!-- Café 1 - Expresso con imagen ajustada -->
                 <div class="drink-card">
                     <img src="https://ubxruso.github.io/blinky-night-coffee/expresso.jpeg" alt="Expresso" class="drink-image expresso-image">
                     <div class="drink-info">
@@ -406,7 +441,7 @@
                     </div>
                 </div>
                 
-                <!-- Café 2 - Cortado con imagen más alta -->
+                <!-- Café 2 - Cortado con imagen -->
                 <div class="drink-card">
                     <img src="https://ubxruso.github.io/blinky-night-coffee/Cortado.jpeg" alt="Cortado" class="drink-image cortado-image">
                     <div class="drink-info">
@@ -416,7 +451,7 @@
                     </div>
                 </div>
                 
-                <!-- Café 3 - Bombón con imagen más alta -->
+                <!-- Café 3 - Bombón con imagen ajustada -->
                 <div class="drink-card">
                     <img src="https://ubxruso.github.io/blinky-night-coffee/Cafe%20bombón.jpeg" alt="Café Bombón" class="drink-image bombon-image">
                     <div class="drink-info">
@@ -435,7 +470,7 @@
                     </div>
                 </div>
                 
-                <!-- Café 5 - Capuchino con imagen más alta -->
+                <!-- Café 5 - Capuchino con imagen ajustada -->
                 <div class="drink-card">
                     <img src="https://ubxruso.github.io/blinky-night-coffee/Capuchino.jpeg" alt="Capuchino" class="drink-image capuchino-image">
                     <div class="drink-info">
@@ -517,7 +552,7 @@
                     </div>
                 </div>
                 
-                <!-- Café 14 - Nutella Afogato con imagen más alta -->
+                <!-- Café 14 - Nutella Afogato con imagen ajustada -->
                 <div class="drink-card">
                     <img src="https://ubxruso.github.io/blinky-night-coffee/Nutella%20afogato.jpeg" alt="Nutella Afogato" class="drink-image nutella-image">
                     <div class="drink-info">
