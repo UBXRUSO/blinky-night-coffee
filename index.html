@@ -182,6 +182,11 @@
             height: 220px !important;
         }
         
+        /* Imágenes más altas para Cortado, Bombón, Capuchino y Nutella Afogato */
+        .cortado-image, .bombon-image, .capuchino-image, .nutella-image {
+            height: 260px !important;
+        }
+        
         .drink-info {
             padding: 20px;
             position: relative;
@@ -283,6 +288,10 @@
             .expresso-image {
                 height: 200px !important;
             }
+            
+            .cortado-image, .bombon-image, .capuchino-image, .nutella-image {
+                height: 220px !important;
+            }
         }
         
         @media (max-width: 480px) {
@@ -307,6 +316,10 @@
             /* Ajuste para móviles pequeños */
             .expresso-image {
                 height: 180px !important;
+            }
+            
+            .cortado-image, .bombon-image, .capuchino-image, .nutella-image {
+                height: 200px !important;
             }
         }
         
@@ -393,9 +406,9 @@
                     </div>
                 </div>
                 
-                <!-- Café 2 - Cortado con imagen -->
+                <!-- Café 2 - Cortado con imagen más alta -->
                 <div class="drink-card">
-                    <img src="https://ubxruso.github.io/blinky-night-coffee/Cortado.jpeg" alt="Cortado" class="drink-image">
+                    <img src="https://ubxruso.github.io/blinky-night-coffee/Cortado.jpeg" alt="Cortado" class="drink-image cortado-image">
                     <div class="drink-info">
                         <h3 class="drink-name">Cortado</h3>
                         <p class="drink-description">Un equilibrio perfecto entre espresso y un toque de leche caliente.</p>
@@ -403,9 +416,9 @@
                     </div>
                 </div>
                 
-                <!-- Café 3 - Bombón con imagen -->
+                <!-- Café 3 - Bombón con imagen más alta -->
                 <div class="drink-card">
-                    <img src="https://ubxruso.github.io/blinky-night-coffee/Cafe%20bombón.jpeg" alt="Café Bombón" class="drink-image">
+                    <img src="https://ubxruso.github.io/blinky-night-coffee/Cafe%20bombón.jpeg" alt="Café Bombón" class="drink-image bombon-image">
                     <div class="drink-info">
                         <h3 class="drink-name">Bombón</h3>
                         <p class="drink-description">Deliciosa combinación de café espresso y leche condensada.</p>
@@ -422,9 +435,9 @@
                     </div>
                 </div>
                 
-                <!-- Café 5 - Capuchino con imagen -->
+                <!-- Café 5 - Capuchino con imagen más alta -->
                 <div class="drink-card">
-                    <img src="https://ubxruso.github.io/blinky-night-coffee/Capuchino.jpeg" alt="Capuchino" class="drink-image">
+                    <img src="https://ubxruso.github.io/blinky-night-coffee/Capuchino.jpeg" alt="Capuchino" class="drink-image capuchino-image">
                     <div class="drink-info">
                         <h3 class="drink-name">Capuchino</h3>
                         <p class="drink-description">Espresso con leche vaporizada y una generosa capa de espuma.</p>
@@ -504,9 +517,9 @@
                     </div>
                 </div>
                 
-                <!-- Café 14 - Nutella Afogato con imagen -->
+                <!-- Café 14 - Nutella Afogato con imagen más alta -->
                 <div class="drink-card">
-                    <img src="https://ubxruso.github.io/blinky-night-coffee/Nutella%20afogato.jpeg" alt="Nutella Afogato" class="drink-image">
+                    <img src="https://ubxruso.github.io/blinky-night-coffee/Nutella%20afogato.jpeg" alt="Nutella Afogato" class="drink-image nutella-image">
                     <div class="drink-info">
                         <h3 class="drink-name">Nutella Afogato <span class="new-badge">Nuevo</span></h3>
                         <p class="drink-description">La combinación perfecta de helado, espresso y deliciosa Nutella.</p>
@@ -545,6 +558,24 @@
                         <h3 class="drink-name">Croquetas</h3>
                         <p class="drink-description">Deliciosas croquetas caseras crujientes por fuera y cremosas por dentro.</p>
                         <p class="drink-price">$250</p>
+                    </div>
+                </div>
+                
+                <!-- Snack 4 - Dulce -->
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Dulce <span class="new-badge">Nuevo</span></h3>
+                        <p class="drink-description">Delicioso postre dulce para acompañar tu café.</p>
+                        <p class="drink-price">$85</p>
+                    </div>
+                </div>
+                
+                <!-- Snack 5 - Dulce con helado -->
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Dulce con Helado <span class="new-badge">Nuevo</span></h3>
+                        <p class="drink-description">Nuestro dulce especial acompañado de helado cremoso.</p>
+                        <p class="drink-price">$200</p>
                     </div>
                 </div>
             </div>
@@ -665,6 +696,39 @@
                     </div>
                 </div>
                 
+                <!-- Nuevas bebidas alcohólicas -->
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Ron Cola <span class="new-badge">Nuevo</span></h3>
+                        <p class="drink-description">Refrescante combinación de ron y cola con un toque de limón.</p>
+                        <p class="drink-price">$270</p>
+                    </div>
+                </div>
+                
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Cuba Libre <span class="new-badge">Nuevo</span></h3>
+                        <p class="drink-description">Clásico cóctel de ron, cola, limón y un toque especial.</p>
+                        <p class="drink-price">$300</p>
+                    </div>
+                </div>
+                
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Whisky Sencillo <span class="new-badge">Nuevo</span></h3>
+                        <p class="drink-description">Whisky de calidad servido en su punto perfecto.</p>
+                        <p class="drink-price">$180</p>
+                    </div>
+                </div>
+                
+                <div class="drink-card">
+                    <div class="drink-info">
+                        <h3 class="drink-name">Whisky Doble <span class="new-badge">Nuevo</span></h3>
+                        <p class="drink-description">Doble porción de nuestro whisky premium para los conocedores.</p>
+                        <p class="drink-price">$360</p>
+                    </div>
+                </div>
+                
                 <!-- Cervezas -->
                 <div class="drink-card">
                     <div class="drink-info">
@@ -751,7 +815,3 @@
     </script>
 </body>
 </html>
-
-
-
-
